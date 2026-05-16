@@ -16,6 +16,10 @@ Language-agnostic scaffold for every Cascading Labs repo. Contains the files eve
 | `.gitignore`                           | OS/editor/secrets baseline + commented language sections |
 | `.pre-commit-config.yaml`              | pre-commit-hooks, gitleaks, commitizen + language TODOs  |
 | `renovate.json`                        | Weekly schedule, security PRs prioritized                |
+| `AGENTS.md`                            | Shared project instructions for agents and collaborators |
+| `CLAUDE.md`                            | Thin Claude bridge back to `AGENTS.md`                   |
+| `opencode.json`                        | Loads shared project docs in OpenCode                    |
+| `.agents/skills/*`                     | Starter repo skills for orientation, planning, validation |
 | `.github/pull_request_template.md`     | Intent / Changes / GenAI / Risks / Checklist             |
 | `.github/ISSUE_TEMPLATE/*.yaml`        | Bug / Feature / Question / Ticket forms + config         |
 | `media/`                               | Drop `logo-dark.svg` and `logo-light.svg` here           |
@@ -40,11 +44,26 @@ After bootstrapping, open these files and fill in project-specific details:
 - `.gitignore` — uncomment the language section(s) you need
 - `.pre-commit-config.yaml` — uncomment the language hooks you need
 - `.github/ISSUE_TEMPLATE/1_bug_report.yaml` — tweak the version/platform fields to match
+- `AGENTS.md` — replace placeholder repo notes with actual shared project truth, including architecture, constraints, and validation commands
+- `.agents/skills/repo-orientation/` — customize once the repo shape is real
+- `.agents/skills/change-planning/` — adapt to the repo's actual boundaries and planning habits
+- `.agents/skills/verification-plan/` — adapt to the repo's real validation commands and test tiers
 - `media/` — drop in logos (see `Assets/README.md` for the tile template)
 
 ## Updating the template
 
 When you improve a pattern in a downstream repo (say, a better pre-commit hook config), copy it back here so future repos benefit. The template is a source of truth, not a one-way branch.
+
+Agent conventions follow the same promotion path:
+
+```text
+checkout experiment
+  -> repeated usefulness
+  -> project-committed convention
+  -> if broadly reusable, backported into the template
+```
+
+The template should seed shape, not fake repo truth. Keep private per-clone capabilities in ignored checkout-local files such as `.local/`, `AGENTS.local.md`, and `CLAUDE.local.md` until they are ready to promote.
 
 ## Token reference
 
