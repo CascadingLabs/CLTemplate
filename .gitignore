@@ -28,6 +28,21 @@ TODO.md
 .claude/settings.local.json
 
 # ==========================================
+# Checkout-local agent capabilities
+# ==========================================
+.local/
+AGENTS.local.md
+CLAUDE.local.md
+
+# Checkout-local native agent capability paths
+.agents/skills/local-*/
+.opencode/agent/local-*.md
+.opencode/command/local-*.md
+.opencode/tools/local-*
+.claude/agents/local-*.md
+.claude/commands/local-*.md
+
+# ==========================================
 # OS & System
 # ==========================================
 .DS_Store
