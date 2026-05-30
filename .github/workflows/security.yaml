@@ -1,0 +1,48 @@
+# Dependency CVE gate (TEMPLATE) — be proactive instead of waiting on Dependabot.
+#
+# Scanners live as reusable workflows in CascadingLabs/.github. Uncomment the
+# job(s) matching this repo's stack. Update the scanners once there; every repo
+# inherits the change.
+#
+#   Python  -> needs pyproject.toml (+ uv.lock)
+#   Rust    -> needs Cargo.lock
+#   JS/TS   -> needs a lockfile (bun.lock / package-lock.json / pnpm-lock.yaml)
+#   Go      -> needs go.mod
+
+name: Security (CVE)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: security-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # python:
+  #   uses: CascadingLabs/.github/.github/workflows/cve-python.yml@main
+
+  # rust:
+  #   uses: CascadingLabs/.github/.github/workflows/cve-rust.yml@main
+
+  # js:
+  #   uses: CascadingLabs/.github/.github/workflows/cve-js.yml@main
+  #   with:
+  #     package-manager: bun   # bun | npm | pnpm | yarn
+
+  # go:
+  #   uses: CascadingLabs/.github/.github/workflows/cve-go.yml@main
+
+  # Placeholder keeps the workflow valid until a real job is enabled above.
+  noop:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - run: "true"
