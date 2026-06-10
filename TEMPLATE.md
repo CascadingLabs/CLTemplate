@@ -39,16 +39,16 @@ The script:
 
 After bootstrapping, open these files and fill in project-specific details:
 
-- `README.md` — Usage and Development sections
-- `CONTRIBUTING.md` — Clone & Setup commands
-- `.gitignore` — uncomment the language section(s) you need
-- `.pre-commit-config.yaml` — uncomment the language hooks you need
-- `.github/ISSUE_TEMPLATE/1_bug_report.yaml` — tweak the version/platform fields to match
-- `AGENTS.md` — replace placeholder repo notes with actual shared project truth, including architecture, constraints, and validation commands
-- `.agents/skills/repo-orientation/` — customize once the repo shape is real
-- `.agents/skills/change-planning/` — adapt to the repo's actual boundaries and planning habits
-- `.agents/skills/verification-plan/` — adapt to the repo's real validation commands and test tiers
-- `media/` — drop in logos (see `Assets/README.md` for the tile template)
+- `README.md` -- Usage and Development sections
+- `CONTRIBUTING.md` -- Clone & Setup commands
+- `.gitignore` -- uncomment the language section(s) you need
+- `.pre-commit-config.yaml` -- uncomment the language hooks you need
+- `.github/ISSUE_TEMPLATE/1_bug_report.yaml` -- tweak the version/platform fields to match
+- `AGENTS.md` -- replace placeholder repo notes with actual shared project truth, including architecture, constraints, and validation commands
+- `.agents/skills/repo-orientation/` -- customize once the repo shape is real
+- `.agents/skills/change-planning/` -- adapt to the repo's actual boundaries and planning habits
+- `.agents/skills/verification-plan/` -- adapt to the repo's real validation commands and test tiers
+- `media/` -- drop in logos (see `Assets/README.md` for the tile template)
 
 ## Updating the template
 

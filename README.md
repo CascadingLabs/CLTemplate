@@ -17,6 +17,9 @@
 
 {{PROJECT_TAGLINE}}
 
+> [!WARNING]
+> {{PROJECT_NAME}} is research tooling for API design and web reverse engineering. **You assume all legal risk for how you use it.** Respect `robots.txt`, rate limits, and IP bans; and please don't bypass them with Tor or a VPN. Read [DISCLAIMER.md](DISCLAIMER.md) before pointing it at anything.
+
 ## Usage
 
 <!-- Quickstart: the one or two commands someone copy-pastes to try it. -->
@@ -38,6 +41,7 @@
 - **Support:** see [SUPPORT.md](SUPPORT.md)
 - **Security:** see [SECURITY.md](SECURITY.md)
 - **Code of Conduct:** see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- **Responsible use:** see [DISCLAIMER.md](DISCLAIMER.md)
 
 ## Contact
 
@@ -45,4 +49,4 @@
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE).
+Apache 2.0 -- see [LICENSE](LICENSE).

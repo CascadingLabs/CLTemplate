@@ -25,6 +25,15 @@ repos:
       - id: commitizen
         stages: [commit-msg]
 
+  - repo: local
+    hooks:
+      - id: no-em-dash
+        name: no em dash in prose
+        entry: python scripts/check_no_em_dash.py
+        language: system
+        files: \.(adoc|md|mdx|rst|txt|ya?ml)$
+        stages: [pre-commit, manual]
+
   # --- Language-specific hooks (uncomment what applies) -----------------
   #
   # JS/TS (Biome):
