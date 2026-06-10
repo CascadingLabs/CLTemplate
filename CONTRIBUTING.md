@@ -28,11 +28,11 @@ Pick the [template](https://github.com/CascadingLabs/{{PROJECT_NAME}}/issues/new
 
 ## Pull Request Rules
 
-1. **Branch from `main`** — use `feat/...`, `fix/...`, `docs/...`.
-2. **Keep PRs focused** — one logical change per PR.
-3. **Pass CI** — lint and tests must succeed.
-4. **Fill in the PR template** — Intent, Changes, GenAI Usage, Risks.
-5. **Link an issue** — reference it with `Closes #<number>`.
+1. **Branch from `main`** -- use `feat/...`, `fix/...`, `docs/...`.
+2. **Keep PRs focused** -- one logical change per PR.
+3. **Pass CI** -- lint and tests must succeed.
+4. **Fill in the PR template** -- Intent, Changes, GenAI Usage, Risks.
+5. **Link an issue** -- reference it with `Closes #<number>`.
 
 ### Commit Conventions
 

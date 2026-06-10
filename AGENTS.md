@@ -2,7 +2,7 @@
 
 ## Project overview
 
-`{{PROJECT_NAME}}` — {{PROJECT_TAGLINE}}
+`{{PROJECT_NAME}}` -- {{PROJECT_TAGLINE}}
 
 TODO: Replace this section with the repo's actual purpose, major responsibilities, and domain vocabulary.
 
