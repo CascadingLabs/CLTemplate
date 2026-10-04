@@ -7,7 +7,7 @@ Language-agnostic scaffold for every Cascading Labs repo. Contains the files eve
 | File                                   | Purpose                                                  |
 |----------------------------------------|----------------------------------------------------------|
 | `LICENSE`                              | Apache 2.0                                               |
-| `CODE_OF_CONDUCT.md`                   | Contributor Covenant 2.1, pointing at the CL Discord     |
+| `CODE_OF_CONDUCT.md`                   | Contributor Covenant 3.0, pointing at the CL Discord     |
 | `SECURITY.md`                          | Vulnerability reporting policy                           |
 | `SUPPORT.md`                           | Where to get help (Discord, GitHub issues, email)        |
 | `CONTRIBUTING.md`                      | Setup, prek, PR rules, conventional commits              |
